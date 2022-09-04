@@ -19,7 +19,7 @@ public class QRCodeController {
     public ModelAndView getQrGeneratePage(Model model, HttpServletRequest request, HttpServletResponse response) {
 
 
-        return new ModelAndView("");
+        return new ModelAndView("qr/viewQrGeneration");
 
     }
 

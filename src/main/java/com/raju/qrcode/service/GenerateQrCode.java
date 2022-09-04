@@ -22,9 +22,9 @@ public class GenerateQrCode {
     //main() method
     public static void main(String args[]) throws WriterException, IOException, NotFoundException {
         //data that we want to store in the QR code
-        String str = "THE HABIT OF PERSISTENCE IS THE HABIT OF VICTORY.";
+        String str = "Faiyaz Sinan";
         //path where we want to get QR Code
-        String path = "C:\\Users\\Raju\\Downloads\\qr-code\\Quote-L.png";
+        String path = "C:\\Users\\Asus\\Downloads\\qr-code\\Quote-L.png";
         //Encoding charset to be used
         String charset = "UTF-8";
         Map<EncodeHintType, ErrorCorrectionLevel> hashMap = new HashMap<EncodeHintType, ErrorCorrectionLevel>();
