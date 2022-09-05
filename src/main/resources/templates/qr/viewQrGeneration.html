@@ -2,17 +2,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <div th:fragment="generateQrPageIncludeStyle" th:remove="tag">
-    <link href="assets/lib/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/lib/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="assets/lib/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
 </div>
-
 
 
 <div class="page-content" style="min-height: 1601px;" th:fragment="generateQr">
     <div class="row">
         <div class="col-md-12 col-sm-12">
             <!-- BEGIN Portlet PORTLET-->
-             abc
+            <div align="center">
+                <h1>QR Generation</h1>
+                <form action="#" th:action="@{/}" method="post" th:object="${qrRequest}">
+                    <label>Encoded Content:</label>
+                    <input type="text" th:field="*{content}"/><br/>
+
+
+                    <button type="submit">Generate</button>
+                </form>
+            </div>
         </div>
     </div>
 

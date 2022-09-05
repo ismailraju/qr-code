@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="includes/head :: htmlhead"></div>
+</head>
+
+<body class="page-content-white page-sidebar-closed">
+<div class="page-wrapper">
+
+    <div class="page-container">
+        <div class="page-content" th:replace="qr/viewQrGeneration :: generateQr"></div>
+    </div>
+
+</div>
+<div th:replace="includes/footer :: footer">...</div>
+
+
+</body>
+</html>

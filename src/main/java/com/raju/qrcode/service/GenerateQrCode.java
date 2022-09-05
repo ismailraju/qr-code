@@ -4,12 +4,14 @@ import com.google.zxing.*;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class GenerateQrCode {
     //static function that creates QR Code
     public static void generateQRcode(String data, String path, String charset, Map map, int h, int w) throws WriterException, IOException {
@@ -24,7 +26,7 @@ public class GenerateQrCode {
         //data that we want to store in the QR code
         String str = "Faiyaz Sinan";
         //path where we want to get QR Code
-        String path = "C:\\Users\\Asus\\Downloads\\qr-code\\Quote-L.png";
+        String path = "C:\\Users\\Raju\\Downloads\\qr-code\\Quote-L.png";
         //Encoding charset to be used
         String charset = "UTF-8";
         Map<EncodeHintType, ErrorCorrectionLevel> hashMap = new HashMap<EncodeHintType, ErrorCorrectionLevel>();
